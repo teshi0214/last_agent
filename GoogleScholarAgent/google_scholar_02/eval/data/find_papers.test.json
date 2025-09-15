@@ -1,0 +1,55 @@
+{
+  "eval_set_id": "google_scholar_paper_retrieval_set",
+  "name": "Google Scholar Paper Retrieval",
+  "description": "This is an eval set that is used for unit testing paper retrievel",
+  "eval_cases": [
+    {
+      "eval_id": "retrieve_paper_name",
+      "conversation": [
+        {
+          "invocation_id": "invoke_gluten_papers_1",
+          "user_content": { 
+            "parts": [
+              {
+                "text": "Give me papers about gluten"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+              "parts": [
+                  {
+                      "function_call": {
+                          "name": "find_papers_tool",
+                          "args": {
+                              "query": "gluten"
+                          }
+                      }
+                  },
+                  {
+                      "text": "Here are some papers I found about gluten."
+                  }
+              ],
+              "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [ 
+              {
+                "args": {
+                  "query": "gluten"
+                },
+                "name": "find_papers_tool"
+              }
+            ],
+            "intermediate_responses": []
+          }
+        }
+      ],
+      "session_input": { 
+        "app_name": "root_agent",
+        "user_id": "test_user",
+        "state": {}
+      }
+    }
+  ]
+}

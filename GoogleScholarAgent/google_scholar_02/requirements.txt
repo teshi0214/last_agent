@@ -1,0 +1,11 @@
+google-adk
+google-cloud-aiplatform
+absl-py
+python-dotenv
+requests
+
+google-cloud-aiplatform[adk,agent_engines]
+beautifulsoup4
+lxml
+google-search-results
+pandas

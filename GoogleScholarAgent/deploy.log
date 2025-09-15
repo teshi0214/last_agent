@@ -1,0 +1,6 @@
+from google_scholar_02.agent import root_agent
+from google_scholar_02.settings import Settings
+
+adk_app = AdkApp(agent=root_agent, enable_tracing=True, env_vars=Settings().model_dump())
+
+agent_engine=adk_app,           # ←あなたの AdkApp / Agent を渡す

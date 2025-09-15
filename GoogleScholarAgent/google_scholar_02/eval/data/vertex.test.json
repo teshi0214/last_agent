@@ -1,0 +1,28 @@
+{
+  "eval_id": [
+    "retrieve_paper_name_vertex",
+    "ai_research_papers_eval"
+  ],
+  "prompt": [
+    "Find academic research papers about gluten",
+    "Find academic research papers on artificial intelligence"
+  ],
+  "reference": [
+    "Here are some papers I found about gluten",
+    "Here are some highly-cited papers on Artificial intelligence"
+  ],
+  "reference_trajectory": [
+    [
+      {
+        "tool_name": "find_papers_tool",
+        "tool_args": {"query": "gluten"}
+      }
+    ],
+    [
+      {
+        "tool_name": "find_papers_tool",
+        "tool_args": {"query": "artificial intelligence"}
+      }
+    ]
+  ]
+}
