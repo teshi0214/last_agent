@@ -65,6 +65,7 @@ pip install \
   python-dotenv ¥
   absl-py
 python-dotenv
+google-search-results
 
 	2.	ログイン & プロジェクト設定
 gcloud auth login
