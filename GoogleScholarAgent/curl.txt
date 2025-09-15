@@ -2,7 +2,7 @@
 cd ~/work
 
 # リポジトリをクローン
-git clone https://github.com/teshi0214/good_agent.git
+git clone https://github.com/teshi0214/last_agent.git
 cd good_agent
 
 # 仮想環境を作成 & 有効化
@@ -62,7 +62,9 @@ pip install \
   lxml \
   requests \
   pandas \
-  python-dotenv
+  python-dotenv ¥
+  absl-py
+python-dotenv
 
 	2.	ログイン & プロジェクト設定
 gcloud auth login
